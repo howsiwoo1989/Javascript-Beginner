@@ -1,0 +1,60 @@
+//============대입연산자==============
+
+//연산자
+let a = 1;
+
+//사칙연산자
+let b = 2;
+console.log(a + b);
+console.log(a * b);
+console.log(a - b);
+console.log(a / b);
+console.log(a % b);
+
+//연결연산자
+let a1 = "1";
+let b1 = 2;
+console.log(a1 + b1);
+
+//복합연산자(산술연산자 + 대입연산자)
+let a2 = 5;
+a2 += 10;
+console.log(a2);
+
+//증감연산자
+let a3 = 10;
+a3++;
+console.log(a3);
+
+//논리연산자(불린)
+console.log(!true);
+console.log(!false);
+console.log(true && true); // true And true
+console.log(true && false); // true And false
+console.log(true || false); // true Or false
+
+//비교연산자
+let comA = 1 == "1";
+let comB = 1 === "1"; //타입까지 비교
+let comC = 1 != "1";
+let comD = 1 !== "1";
+
+console.log(comA);
+console.log(comB);
+console.log(comC);
+console.log(comD);
+
+let com1 = 3 <= 2; 
+console.log(com1);
+
+//타입확인
+let comAA = 1;
+
+comAA = "1";
+console.log(typeof comAA);
+
+//Null 병합연산자
+let comAB;
+
+comAB = comAB ?? 10;
+console.log(comAB);

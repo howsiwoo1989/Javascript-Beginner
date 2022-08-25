@@ -1,0 +1,25 @@
+const arr = ["a", "b", "c"];
+
+for (let i = 0; i < arr.length; i++) { 
+    //초기식; 조건식; 연산식; 
+    //반복 수행할 명령 
+    console.log(arr[i]); 
+} 
+    
+let person={ 
+    name: "우현진" ,
+    age: 34, 
+    tall: 180
+ }; 
+ 
+const personKeys=Object.keys(person); 
+for (let j=0; j < personKeys.length; j++) { 
+    const curKey=personKeys[j]; 
+    const curValue=person[curKey]; 
+    console.log(`${curKey} : ${curValue}`); // 
+} 
+    
+const personValues=Object.values(person); 
+for (let k=0; k < personValues.length; k++) { 
+    console.log(personValues[k]); 
+}

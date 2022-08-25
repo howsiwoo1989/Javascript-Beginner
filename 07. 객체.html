@@ -1,0 +1,48 @@
+//객체 생성자 방식
+let person1 = new Object();
+
+//객체 리터럴 방식
+let person2 = {
+    //key: "value" //프로퍼티(객체 프로퍼티)
+    key: "value",
+    key1: "value2",
+    key2: true,
+    key3: [1, 2],
+    key4: 1234,
+    key5: function () {}
+};
+let person3 = {
+    name: "우현진",
+    age: 10
+};
+
+console.log(person2.key1); //점표기법
+console.log(person3["name"]); //괄호표기법 (동적인 값)
+
+console.log(getPropertyValue("name"));
+
+function getPropertyValue(key) {
+    return person3[key];
+}
+
+const person4 = {
+    name: "우현진",
+    age: 10,
+    say: function () {
+        console.log(`안녕 나는 ${this["name"]}이라고 해`);
+    }
+};
+//상수자체가 아닌 객체를 수정하기 때문에 값 할당 가능
+
+person4.location = "한국";
+person4.["gender"] = "남성";
+
+//delete person["name"];
+///person4.name = null; //메모리 날림
+
+console.log(person4);
+person4.say();
+
+console.log(`name : ${"name" in person4}`);
+console.log(`age : ${"age" in person4}`);
+console.log(`gender : ${"gender" in person4}`);

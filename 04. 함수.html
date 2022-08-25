@@ -1,0 +1,11 @@
+let count = 1;                      //전역변수(글로벌변수)
+
+//함수 선언식, 함수 선언 방식의 함수 생성
+function getArea(width, height) {   //매개변수
+    let area = width * height;      //지역변수
+    console.log(count);
+    return area;
+}
+let area1 = getArea(100, 200);
+
+console.log(area1);

@@ -1,0 +1,21 @@
+console.log(helloB()); //함수선언식 호이스팅
+console.log(helloA()); //함수표현식 호이스팅X
+
+let helloA = function () {
+return "안녕하세요";
+}; //함수표현식
+
+function helloB() {
+return "안녕하세요 여러분";
+} //함수선언식
+
+
+//화살표함수 (호이스팅X)
+let helloA1 = () => {
+return "안녕하세요";
+};
+
+let helloB1 = () => "안녕하세요";
+
+console.log(helloA1());
+console.log(helloB1());

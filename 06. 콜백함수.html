@@ -1,0 +1,24 @@
+//콜백함수
+function checkMood(mood, goodCallback, badCallback) {
+    if (mood == "good") {
+        //기분 좋음
+        goodCallback();
+    } else {
+        //기분 나쁨
+        badCallback();
+    }
+}
+
+function cry() {
+    console.log("ACTION :: CRY");
+}
+
+function sing() {
+    console.log("ACTION :: SING");
+}
+
+function dance() {
+    console.log("ACTION :: DANCE");
+}
+
+checkMood("sad", sing, cry);
